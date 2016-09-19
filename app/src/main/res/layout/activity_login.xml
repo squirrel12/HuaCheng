@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/login_bg"
+    tools:context="com.ett.csz.huacheng.ui.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imageView2"
+            android:src="@mipmap/login_logo"
+            android:contentDescription="@string/hello_world"/>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageView3"
+            android:contentDescription="@string/hello_world"
+            android:src="@mipmap/login_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="50dp"
+        android:background="@mipmap/login_form"
+        android:id="@+id/linearlayout2"
+        android:layout_below="@+id/linearlayout1">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="2dp"
+            android:background="@mipmap/text_bj"
+            android:inputType="text"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="2dp"
+            android:background="@mipmap/text_bj"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember"
+            android:id="@+id/checkBox"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:id="@+id/login"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="buttonClick"
+                android:background="@mipmap/signin"
+                android:contentDescription="@string/hello_world"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:id="@+id/exit"
+                android:onClick="buttonClick"
+                android:background="@mipmap/signout"
+                android:contentDescription="@string/hello_world"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
