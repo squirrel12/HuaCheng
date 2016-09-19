@@ -31,4 +31,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.anton46:stepsview:0.0.2'
     compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
 }

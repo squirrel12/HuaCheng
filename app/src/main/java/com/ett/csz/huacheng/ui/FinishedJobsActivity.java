@@ -14,7 +14,7 @@ public class FinishedJobsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finished_jobs);
     }
-    private void onclickImage(View view){
+    public void onclickImage(View view){
         if(view.getId()==R.id.back4){
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);

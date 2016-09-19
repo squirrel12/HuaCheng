@@ -94,10 +94,7 @@ public class MainActivity extends FragmentActivity {
             startActivity(intent);
             this.finish();
         }
-        if(view.getId()==R.id.select_photo){
-            //TODO 测试照片上传
-        }
-        if(view.getId()==R.id.textView9){
+        if(view.getId()==R.id.button){//打开已完成的工单
             Intent intent = new Intent(this, FinishedJobsActivity.class);
             startActivity(intent);
             this.finish();
