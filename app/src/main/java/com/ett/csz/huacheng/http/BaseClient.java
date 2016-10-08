@@ -16,7 +16,7 @@ import com.loopj.android.http.RequestParams;
 public class BaseClient {
     private static AsyncHttpClient client = new AsyncHttpClient();
 
-    private static String auditURL = "http://202.127.48.102/appapi/AppSearchServer.asmx/LabAssisService";
+    private static String loginURL = "http://61.181.128.237:8091/webserver/ValideWebService.asmx/";
     private static String BASE_URL = "http://202.127.48.102/appapi/AppSearchServer.asmx/";
 
     public static AsyncHttpClient getIntance() {
@@ -52,7 +52,7 @@ public class BaseClient {
     }
 
     public static void post2(RequestParams params, AsyncHttpResponseHandler responseHandler) {
-        client.post(auditURL, params, responseHandler);
+        client.post(loginURL, params, responseHandler);
     }
 
     public static boolean isConnect(Context context) {

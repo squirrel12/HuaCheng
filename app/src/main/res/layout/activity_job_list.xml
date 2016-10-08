@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_job_list"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ett.csz.huacheng.ui.JobListActivity"
+    android:background="@mipmap/bj">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/title_order"
+        android:background="@color/topbar"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:id="@+id/back6"
+            android:onClick="onclickImage"
+            android:contentDescription="@string/hello_world"
+            android:background="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_order"
+            android:gravity="center"
+            style="@style/Activity_Title"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="30dp">
+
+        <TextView
+            android:text="@string/JobNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_weight="1"
+            style="@style/Title_Table" />
+
+        <TextView
+            android:text="@string/projectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_weight="1"
+            style="@style/Title_Table" />
+
+        <TextView
+            android:text="@string/EndCompletionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:layout_weight="1"
+            style="@style/Title_Table" />
+    </LinearLayout>
+    <com.ett.csz.huacheng.mylistview.AutoListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finish_query_list"
+        android:divider="@color/white"
+        android:dividerHeight="1px" />
+</LinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/bj"
@@ -35,18 +35,43 @@
             android:clickable="true"
             android:textColor="@color/gold"
             android:onClick="onclickLayout" />
+
     </RelativeLayout>
 
-    <ScrollView
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView3"
-        android:layout_below="@+id/title_order" >
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
 
-        <ListView
+        <TextView
+            android:text="@string/JobNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/listView" />
-    </ScrollView>
+            android:id="@+id/textView54"
+            style="@style/Title_Table"
+            android:layout_weight="1" />
 
-</RelativeLayout>
+        <TextView
+            android:text="@string/projectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView55"
+            style="@style/Title_Table"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="@string/jiedan_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView56"
+            style="@style/Title_Table"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <com.ett.csz.huacheng.mylistview.AutoListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unfinished_list"/>
+</LinearLayout>

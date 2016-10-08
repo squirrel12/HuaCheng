@@ -10,13 +10,15 @@
         android:layout_height="40dp"
         android:id="@+id/title_user"
         android:background="@color/topbar"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title_activity_user_center"
             android:gravity="center"
+            android:layout_centerVertical="true"
             style="@style/Activity_Title" />
 
         <ImageButton
@@ -24,6 +26,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/back2"
             android:onClick="onclickImage"
+            android:layout_centerVertical="true"
             android:contentDescription="@string/hello_world"
             android:background="@mipmap/back" />
     </RelativeLayout>

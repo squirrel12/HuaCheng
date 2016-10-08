@@ -4,7 +4,7 @@ package com.ett.csz.huacheng.entry;
  * 维修公司参数表
  * Created by csz on 2016/9/19.
  */
-public class Prm_MaintenanceCompany {
+public class Prm_MaintenanceCompany extends BaseEntity{
     private String ID;//主键ID
     private String MaintenanceCompany;//维修公司
     private String MaintenancePerson;//维修人

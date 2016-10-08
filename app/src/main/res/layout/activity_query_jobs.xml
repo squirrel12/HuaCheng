@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ett.csz.huacheng.ui.QueryJobsActivity"
+    android:background="@mipmap/bj">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/title_order"
+        android:background="@color/topbar"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:gravity="center"
+            style="@style/Activity_Title"
+            android:layout_centerInParent="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back5"
+            android:onClick="onclickImage"
+            android:contentDescription="@string/hello_world"
+            android:background="@mipmap/back"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num_1"
+        android:layout_below="@+id/title_order"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material">
+
+        <TextView
+            android:text="@string/JobNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Title_Table" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num_3"
+        android:layout_below="@+id/num_1">
+
+        <TextView
+            android:text="@string/BeginCompletionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Title_Table" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_weight="1"
+            android:inputType="date" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num_4"
+        android:layout_below="@+id/num_3">
+
+        <TextView
+            android:text="@string/EndCompletionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Title_Table" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:layout_weight="1"
+            android:inputType="date" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/num_5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num_4"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:gravity="right"
+        android:paddingRight="20dp">
+        <LinearLayout
+            android:id="@+id/reset_1"
+            android:onClick="onclickImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView8"
+                android:contentDescription="@string/reset"
+                android:background="@mipmap/btn_reset" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:id="@+id/textView2"
+                style="@style/Btn_style"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/submit_1"
+            android:onClick="onclickImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView9"
+                android:contentDescription="@string/submit"
+                android:background="@mipmap/btn_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:id="@+id/textView5"
+                style="@style/Btn_style"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

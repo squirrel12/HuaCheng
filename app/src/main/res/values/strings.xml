@@ -14,7 +14,10 @@
     <string name="exit">退出</string>
     <string name="name">姓名：</string>
     <string name="worksheets_processing">工单处理</string>
-
+    <string name="new_message">新消息</string>
+    <string name="search">搜索</string>
+    <string name="submit">查询</string>
+    <string name="reset">重置</string>
     <!--按钮-->
     <string name="sure">确认</string>
     <string name="cancel">取消</string>
@@ -31,6 +34,35 @@
     <string name="preview">预览</string>
     <string name="camera_cancel">取消</string>
     <string name="no_photo">相册没有图片</string>
+
     <!--工单字段-->
+    <string name="job_source">接单信息</string>
+    <string name="spot">现场情况</string>
+    <string name="projectName">项目名称</string>
     <string name="ID">ID</string>
+    <string name="JobNumber">工单单号</string>
+    <string name="SingleState">工单状态</string>
+    <string name="jiedan_man">接单员</string>
+    <string name="jiedan_date">接单日期</string>
+    <string name="projectAddress">项目地址</string>
+    <string name="contact">联系人</string>
+    <string name="telephone">联系人电话</string>
+    <string name="report_type">报修类型</string>
+    <string name="source_from">信息来源</string>
+    <string name="area">区域</string>
+    <string name="area_from">区属</string>
+    <string name="user_report">用户反映情况</string>
+    <string name="BeginCompletionTime">开始时间</string>
+    <string name="EndCompletionTime">结束时间</string>
+
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+
 </resources>

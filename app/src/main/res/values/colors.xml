@@ -156,4 +156,6 @@
     <!--上传图片时的颜色-->
     <color name="none_color">#00000000</color>
 
+    <color name="blue_text">#d6f9ff</color>
+
 </resources>

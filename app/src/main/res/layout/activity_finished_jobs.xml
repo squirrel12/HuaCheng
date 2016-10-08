@@ -9,14 +9,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:id="@+id/title_order"
         android:background="@color/topbar"
-        android:gravity="center_vertical">
+        android:paddingLeft="5dp">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/my_order"
-            android:gravity="center"
-            style="@style/Activity_Title" />
+            style="@style/Activity_Title"
+            android:layout_centerInParent="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -24,6 +25,23 @@
             android:id="@+id/back4"
             android:onClick="onclickImage"
             android:contentDescription="@string/hello_world"
-            android:background="@mipmap/back" />
+            android:background="@mipmap/back"
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:onClick="onclickImage"
+            android:contentDescription="@string/search"
+            android:background="@mipmap/icon_search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
     </RelativeLayout>
+    <com.ett.csz.huacheng.mylistview.AutoListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstv"
+        android:layout_below="@+id/title_order"/>
 </RelativeLayout>

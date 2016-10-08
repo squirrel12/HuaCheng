@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:text="@string/JobNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:layout_weight="1"
+        style="@style/List_Style" />
+
+    <TextView
+        android:text="@string/projectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_weight="1"
+        style="@style/List_Style" />
+
+    <TextView
+        android:text="@string/EndCompletionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_weight="1"
+        style="@style/List_Style" />
+
+    <ImageView
+        android:src="@mipmap/ic_enter_black"
+        android:contentDescription="@string/search"
+        android:id="@+id/imageView10"
+        android:layout_gravity="center_vertical"
+        android:layout_width="10dp"
+        android:layout_height="30dp" />
+
+</LinearLayout>

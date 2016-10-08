@@ -2,6 +2,8 @@ package com.ett.csz.huacheng.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
@@ -11,12 +13,33 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import com.ett.csz.huacheng.R;
 
+import com.ett.csz.huacheng.adapter.UnFinishListAdapter;
+import com.ett.csz.huacheng.mylistview.AutoListView;
+import com.ett.csz.huacheng.mylistview.AutoListView.OnRefreshListener;
+import com.ett.csz.huacheng.mylistview.AutoListView.OnLoadListener;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * 主页
  * author csz
  */
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity  {
+    /************************工单未完成列表******************************/
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //适配列表
+        initTab();
+    }
+
+
+
+    /*********************************************************************/
     // 定义FragmentTabHost对象
     private FragmentTabHost mTabHost;
     // 定义一个布局
@@ -29,16 +52,9 @@ public class MainActivity extends FragmentActivity {
     // Tab选项卡的文字
     private String mTextviewArray[] = {"主页", "工单", "我"};
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        initTab();
-    }
 
     private void initTab() {
-
         /****************以下是底部选项卡有关*******************/
         // 实例化布局对象
         layoutInflater = LayoutInflater.from(this);

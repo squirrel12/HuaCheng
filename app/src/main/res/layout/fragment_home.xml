@@ -11,5 +11,39 @@
         android:textSize="16sp"
         android:textColor="@color/white"
         android:text="@string/home"/>
+    <!-- 主题图片 -->
+    <com.ett.csz.huacheng.mylistview.SlideShowView
+        android:id="@+id/slideshowView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/new_message"
+            android:id="@+id/textView9"
+            android:textColor="@color/lemonchiffon"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text="New Text"
+            android:id="@+id/textView10"
+            android:layout_gravity="center_vertical"
+            android:autoText="false"
+            android:background="@color/moccasin" />
+    </LinearLayout>
+    <com.ett.csz.huacheng.mylistview.AutoListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_lstv"/>
 
 </LinearLayout>

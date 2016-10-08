@@ -12,4 +12,7 @@ public class CustomsClient {
         abstract void onFailure(String message);
         abstract void onError(Exception e);
     }
+    public static void login(){
+
+    }
 }
