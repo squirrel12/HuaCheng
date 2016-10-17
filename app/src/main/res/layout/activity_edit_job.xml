@@ -342,7 +342,7 @@
 
                 <ImageView
                     android:layout_height="18dp"
-                    app:srcCompat="@mipmap/btn_open"
+                    android:src="@mipmap/btn_open"
                     android:id="@+id/imageView4"
                     android:layout_toLeftOf="@+id/textView6"
                     android:contentDescription="@string/edit"
