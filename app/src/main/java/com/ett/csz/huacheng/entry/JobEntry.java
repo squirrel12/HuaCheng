@@ -31,11 +31,12 @@ public class JobEntry extends BaseEntity{
     public void setAreaName(String areaName) {
         AreaName = areaName;
     }
-public JobEntry(String ProjectName,String AreaName,String HotLineFromName){
+    public JobEntry(String ProjectName,String AreaName,String HotLineFromName){
     super();
     this.ProjectName=ProjectName;
     this.AreaName=AreaName;
     this.HotLineFromName=HotLineFromName;
 }
+
 
 }

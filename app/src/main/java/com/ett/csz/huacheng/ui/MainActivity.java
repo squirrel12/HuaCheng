@@ -1,9 +1,8 @@
 package com.ett.csz.huacheng.ui;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
@@ -11,28 +10,24 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
+
 import com.ett.csz.huacheng.R;
-
-import com.ett.csz.huacheng.adapter.UnFinishListAdapter;
-import com.ett.csz.huacheng.mylistview.AutoListView;
-import com.ett.csz.huacheng.mylistview.AutoListView.OnRefreshListener;
-import com.ett.csz.huacheng.mylistview.AutoListView.OnLoadListener;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import com.ett.csz.huacheng.entry.UserEntity;
 
 /**
  * 主页
  * author csz
  */
 public class MainActivity extends FragmentActivity  {
+    private UserEntity userEntity;
+
     /************************工单未完成列表******************************/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        userEntity=(UserEntity)getIntent().getSerializableExtra("userEntities");
         //适配列表
         initTab();
     }
@@ -55,6 +50,7 @@ public class MainActivity extends FragmentActivity  {
 
 
     private void initTab() {
+
         /****************以下是底部选项卡有关*******************/
         // 实例化布局对象
         layoutInflater = LayoutInflater.from(this);
@@ -99,21 +95,14 @@ public class MainActivity extends FragmentActivity  {
         if (view.getId() == R.id.exitapp) {
             System.exit(0);
         }
-        if (view.getId() == R.id.updatepwditem) {
-            //TODO 需要传递参数
-            Intent intent = new Intent(this, UpdatePWDActivity.class);
-            startActivity(intent);
-            this.finish();
-        }
         if(view.getId()==R.id.myinfo){
             Intent intent = new Intent(this, UserCenterActivity.class);
             startActivity(intent);
-            this.finish();
         }
         if(view.getId()==R.id.button){//打开已完成的工单
             Intent intent = new Intent(this, FinishedJobsActivity.class);
             startActivity(intent);
-            this.finish();
         }
     }
+
 }

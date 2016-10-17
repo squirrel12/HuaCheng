@@ -1,15 +1,15 @@
 package com.ett.csz.huacheng.ui;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.ett.csz.huacheng.R;
+import com.ett.csz.huacheng.base.BaseActivity;
 
 /**
  * 工单编辑
  */
-public class EditJobActivity extends Activity {
+public class EditJobActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class EditJobActivity extends Activity {
     public void onclickImage(View view) {
         if(view.getId()==R.id.back3){
             //TODO 返回上级页面
+            this.finish();
         }
     }
 }

@@ -51,4 +51,13 @@
         <item name="android:textColor">@color/blue_text</item>
         <item name="android:textSize">12sp</item>
     </style>
+    <!--进度条样式-->
+    <style name="alert_dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/none_color</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
 </resources>

@@ -16,8 +16,7 @@ import com.loopj.android.http.RequestParams;
 public class BaseClient {
     private static AsyncHttpClient client = new AsyncHttpClient();
 
-    private static String loginURL = "http://61.181.128.237:8091/webserver/ValideWebService.asmx/";
-    private static String BASE_URL = "http://202.127.48.102/appapi/AppSearchServer.asmx/";
+    private static String BASE_URL = "http://61.181.128.237:8016/ReXianQiangXiu.asmx/";
 
     public static AsyncHttpClient getIntance() {
         return client;
@@ -51,9 +50,7 @@ public class BaseClient {
         return BASE_URL + relativeUrl;
     }
 
-    public static void post2(RequestParams params, AsyncHttpResponseHandler responseHandler) {
-        client.post(loginURL, params, responseHandler);
-    }
+
 
     public static boolean isConnect(Context context) {
         // 获取手机所有连接管理对象（包括对wi-fi,net等连接的管理）

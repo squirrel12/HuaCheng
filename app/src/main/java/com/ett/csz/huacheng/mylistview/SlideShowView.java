@@ -133,7 +133,13 @@ public class SlideShowView extends FrameLayout {
             ImageView view =  new ImageView(context);
             view.setTag(imageUrls[i]);
             if(i==0)//给一个默认图
-                view.setBackgroundResource(R.mipmap.u23);
+                view.setBackgroundResource(R.mipmap.banner1);
+            if(i==1)//给一个默认图
+                view.setBackgroundResource(R.mipmap.banner2);
+            if(i==2)//给一个默认图
+                view.setBackgroundResource(R.mipmap.banner3);
+            if(i==3)//给一个默认图
+                view.setBackgroundResource(R.mipmap.banner4);
             view.setScaleType(ImageView.ScaleType.FIT_XY);
             imageViewsList.add(view);
 
@@ -308,13 +314,13 @@ public class SlideShowView extends FrameLayout {
         @Override
         protected Boolean doInBackground(String... params) {
             try {
-                // 这里一般调用服务端接口获取一组轮播图片，下面是从百度找的几个图片
+                // 这里一般调用服务端接口获取一组轮播图片，网络图片
 
                 imageUrls = new String[]{
-                        "http://a.hiphotos.baidu.com/zhidao/pic/item/0b7b02087bf40ad1225210df552c11dfa9ecce5c.jpg",
-                        "http://www.weikebaba.com/Public/kindeditor/activite/20140801/20140801154845_15898.jpg",
-                        "http://imgstore.cdn.sogou.com/app/a/100540002/408884.jpg",
-                        "http://h.hiphotos.baidu.com/zhidao/pic/item/730e0cf3d7ca7bcb95e26f2cb8096b63f624a81c.jpg"
+                        "",
+                        "",
+                        "",
+                        ""
                 };
                 return true;
             } catch (Exception e) {

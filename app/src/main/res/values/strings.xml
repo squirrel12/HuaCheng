@@ -18,6 +18,7 @@
     <string name="search">搜索</string>
     <string name="submit">查询</string>
     <string name="reset">重置</string>
+    <string name="edit">编辑</string>
     <!--按钮-->
     <string name="sure">确认</string>
     <string name="cancel">取消</string>
@@ -37,7 +38,8 @@
 
     <!--工单字段-->
     <string name="job_source">接单信息</string>
-    <string name="spot">现场情况</string>
+    <string name="spot">现场信息</string>
+    <string name="Repair">维修信息</string>
     <string name="projectName">项目名称</string>
     <string name="ID">ID</string>
     <string name="JobNumber">工单单号</string>

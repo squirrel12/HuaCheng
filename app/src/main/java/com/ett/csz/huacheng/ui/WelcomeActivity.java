@@ -9,7 +9,7 @@ import com.ett.csz.huacheng.R;
 
 
 public class WelcomeActivity extends Activity {
-    private final int SPLASH_DISPLAY_LENGHT = 2000; //延迟2秒
+    private final int SPLASH_DISPLAY_LENGHT = 1000; //延迟1秒
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

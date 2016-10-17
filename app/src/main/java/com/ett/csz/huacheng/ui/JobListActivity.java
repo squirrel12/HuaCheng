@@ -93,7 +93,7 @@ public class JobListActivity extends Activity implements OnRefreshListener, OnLo
     public List<String> getData() {
         List<String> result = new ArrayList<String>();
         Random random = new Random();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 15; i++) {
             long l = random.nextInt(10000);
             result.add("当前条目的ID：" + l);
         }

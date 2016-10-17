@@ -36,7 +36,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical">
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -381,6 +382,117 @@
                         android:text="@string/BeginCompletionTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/textView56"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView57"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/EndCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView58"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView59"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/BeginCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView64"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView65"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/EndCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView66"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView67"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/abc_action_bar_default_padding_material">
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_width="5dp"
+                    android:layout_height="14dp" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/textView54"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Repair"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView55"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/abc_action_bar_default_padding_material"
+                android:padding="5dp"
+                android:background="@drawable/corners_bg">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/BeginCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/textView51"
                         android:layout_weight="1" />
 
@@ -406,6 +518,226 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView53"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/BeginCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView68"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView69"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/EndCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView70"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/BeginCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView71"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/EndCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView72"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/BeginCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView73"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/EndCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="TooManyViews" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView74"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/BeginCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView75"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/EndCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView76"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/BeginCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView77"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/EndCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView78"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/BeginCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView60"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView61"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Style"
+                        android:text="@string/EndCompletionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView62"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/Detail_Content_Style"
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView63"
                         android:layout_weight="1" />
                 </LinearLayout>
 
